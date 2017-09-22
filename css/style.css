@@ -1,0 +1,74 @@
+
+#aboveresult {
+	width: 95%;
+	height: 40px;
+	margin-bottom: 10px;
+	text-align: right;
+	font-size: 25px;
+	padding-top: 20px;
+	font-family: 'Play', sans-serif;
+	background-color: black;
+	color: white;
+	margin: 0;
+	overflow-x: auto;
+	padding-right: 5%;
+}
+#result {
+	margin: 0;
+	height: 45px;
+	width: 95%;
+	height: 100%;
+	text-align: right;
+	margin-right: 10px;
+	color: white;
+	font-size: 45px;
+	font-family: 'Play', sans-serif;
+	background-color: black;
+	padding-right: 5%;
+	padding-bottom: 3%;
+	overflow-x: auto;
+
+}
+
+#history {
+	width: 100%;
+	margin-bottom: 10px;
+	width: 400px;
+	height: 550px;
+	float: left;
+	overflow: scroll;
+	font-size: 20px;
+}
+
+button {
+	font-family: 'Play', sans-serif;
+	font-size: 23px;
+	height: 60px;
+	width: 105px;
+	margin: 2px;
+	margin-left: 0;
+	margin-right: 0;
+	border: none;
+	background-color: rgba(217, 215, 215, 1);
+}
+
+#background {
+	background: rgba(76,76,76,1);
+	width: 435px;
+	padding: 5px;
+	float: left;
+	margin-right: 50px;
+	
+
+}
+
+.number {
+	background-color: rgba(247, 247, 247, 0.59);
+	font-family: 'Play', sans-serif;
+}
+
+#main {
+	text-align: center;
+}
+
+
