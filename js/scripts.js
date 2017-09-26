@@ -18,7 +18,14 @@ var lastbuttonpushed = "";
 var buffer = "";
 updateaboveresult();
 
+window.onclick = function() {
+	if (result.innerHTML != null) {
+		if (parseFloat(result.innerHTML) >= 10000000) {
+			result.innerHTML = (parseFloat(result.innerHTML).toExponential());
 
+		}
+}
+}
 
 //clear the calculator
 clear.onclick = function() { 
@@ -33,7 +40,7 @@ equals.onclick = function() {
 
 	updateaboveresult();
 
-	if (lastbuttonpushed == "number" || lastbuttonpushed == "equals" || lastbuttonpushed == "") {
+	if (lastbuttonpushed == "number" || lastbuttonpushed == "equals" || lastbuttonpushed == "" || lastbuttonpushed == "negator" || lastbuttonpushed == "pib") {
 			aboveresult.innerHTML += result.innerHTML;
 	}
 
@@ -41,7 +48,7 @@ equals.onclick = function() {
 		aboveresult.innerHTML = currfunction;
 	}
 	
-	hist.innerHTML = aboveresult.innerHTML + "<br>" + hist.innerHTML;
+	hist.innerHTML = aboveresult.innerHTML + "<br><br>" + hist.innerHTML;
 	calculateit(aboveresult.innerHTML);
 	aboveresult.innerHTML = "";
 	clearabovebox();
